@@ -32,6 +32,8 @@
   "devDependencies": {
     "@chakra-ui/cli": "^2.4.1",
     "@chakra-ui/react": "^2.8.2",
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@eslint/compat": "^1.1.1",
