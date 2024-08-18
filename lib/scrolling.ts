@@ -17,8 +17,17 @@ import {
 import { stringify } from './utils'
 
 export interface PositionOptions {
+  /**
+   * The distance in pixels from the element's left to check if the element is covered.
+   */
   x?: number
+  /**
+   * The distance in pixels from the element's top to check if the element is covered.
+   */
   y?: number
+  /**
+   * The position where the element's coordinates are checked from.
+   */
   position?: Position
 }
 function getCoordinatesForEl(el: Element, options?: PositionOptions) {

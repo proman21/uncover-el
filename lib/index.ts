@@ -4,9 +4,21 @@ import { isHiddenByAncestors } from './visibility'
 
 export type ScrollBehavior = 'top' | 'bottom' | 'center'
 
+/**
+ * Options to configure the uncover logic.
+ */
 export interface Options extends PositionOptions {
+  /**
+   * Number of times to retry scrolling.
+   */
   retries?: number
+  /**
+   * Number of milliseconds to wait between attempts.
+   */
   interval?: number
+  /**
+   * Viewport position where the element should be scrolled to.
+   */
   scrollBehaviour?: ScrollBehavior
 }
 
@@ -26,6 +38,12 @@ const DEFAULT_OPTIONS = {
   position: 'top',
 } satisfies Options
 
+/**
+ * Attempt to scroll to `el`, ensuring the element isn't covered by any fixed or sticky elements.
+ * If it is covered, scroll any scrollable ancestors and check again if that uncovered the element.
+ * @param el The element to scroll to
+ * @param options A configuration object
+ */
 function uncover(el: HTMLElement, options: Options = {}) {
   const { retries, interval, scrollBehaviour, ...opts } = {
     ...DEFAULT_OPTIONS,
@@ -67,4 +85,5 @@ function uncover(el: HTMLElement, options: Options = {}) {
 }
 
 export default uncover
+export { uncover }
 export type { PositionOptions, Position }
