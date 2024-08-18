@@ -28,14 +28,16 @@ npx jsr add @synthsym/uncover-el
 
 ### From Github Releases
 
-We also provide ESM and UMD builds from the Github Release CDN. Visit the [Releases](https://github.com/proman21/uncover-el/releases) page for more information.
+We also provide ESM and UMD builds from the Github Release CDN. The library is available at `window.uncoverEl` in browser environments.
+
+Visit the [Releases](https://github.com/proman21/uncover-el/releases) page for more information.
 
 ## Usage
 
-The default export of the library is a function that takes a `HTMLElement` and an optional configuration object.
+The function `uncover` takes a `HTMLElement` and an optional configuration object.
 
 ```js
-import uncover from 'uncover-el'
+import { uncover } from 'uncover-el'
 
 const hiddenEl = document.getElementById('hiddenEl')
 await uncover(hiddenEl)

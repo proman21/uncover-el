@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react'
 import Controls, { type ControlOptions } from './Controls'
 import OptionsForm from './OptionsForm'
-import uncover, { Options } from '../lib'
+import { uncover, Options } from '../lib'
 import { RefObject, useCallback, useRef, useState } from 'react'
 
 interface AppData extends Omit<ControlOptions, 'uncoverOnLoad'> {

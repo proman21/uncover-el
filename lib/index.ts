@@ -84,6 +84,5 @@ function uncover(el: HTMLElement, options: Options = {}) {
   attemptUncover(0)
 }
 
-export default uncover
 export { uncover }
 export type { PositionOptions, Position }
