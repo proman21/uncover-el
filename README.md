@@ -28,7 +28,7 @@ npx jsr add @synthsym/uncover-el
 
 ### From Github Releases
 
-We also provide ESM and UMD builds from the Github Release CDN. Visit the [Releases](https://github.com/proman21/uncover-el) page for more information.
+We also provide ESM and UMD builds from the Github Release CDN. Visit the [Releases](https://github.com/proman21/uncover-el/releases) page for more information.
 
 ## Usage
 

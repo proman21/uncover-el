@@ -4,7 +4,7 @@ const config = {
   entries: [
     {
       filePath: './lib/index.ts',
-      outFile: './dist/uncover.d.ts',
+      outFile: './dist/index.d.ts',
       noCheck: false,
       output: {
         exportReferencedTypes: false,

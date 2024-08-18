@@ -3,17 +3,21 @@
   "description": "Smol library to scroll to an element on the page",
   "version": "0.1.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/proman21/uncover-el"
+  },
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/uncover.umd.cjs",
-  "module": "./dist/uncover.js",
-  "types": "./dist/uncover.d.ts",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/uncover.js",
-      "require": "./dist/uncover.umd.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     }
   },
   "scripts": {
