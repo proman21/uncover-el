@@ -1,0 +1,57 @@
+{
+  "name": "uncover",
+  "description": "Smol library to scroll to an element on the page",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/uncover.umd.cjs",
+  "module": "./dist/uncover.js",
+  "types": "./dist/uncover.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/uncover.js",
+      "require": "./dist/uncover.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && dts-bundle-generator --config ./dts.config.cjs",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^2.4.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@eslint/compat": "^1.1.1",
+    "@eslint/js": "^9.9.0",
+    "@hookform/resolvers": "^3.9.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "dts-bundle-generator": "^9.5.1",
+    "eslint": "^9.9.0",
+    "framer-motion": "^11.3.24",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.2",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0",
+    "vite": "^5.4.0",
+    "yup": "^1.4.0"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  }
+}
