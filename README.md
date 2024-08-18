@@ -1,4 +1,4 @@
-# Uncover-El :mag:
+# Uncover-El 🔍
 
 > Reveal to me that which is hidden, unveil to me what is forbidden.
 
