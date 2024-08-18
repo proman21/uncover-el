@@ -43,11 +43,11 @@ await uncover(hiddenEl)
 
 The configurable options are listed below.
 
-| Name            | Type                                                                                                            | Default | Description                                                                  |
-| --------------- | --------------------------------------------------------------------------------------------------------------- | ------- | ---------------------------------------------------------------------------- |
-| retries         | `number`                                                                                                        | `3`     | Number of times to retry scrolling.                                          |
-| interval        | `number`                                                                                                        | `100`   | Number of milliseconds to wait between retries.                              |
-| x               | `number`                                                                                                        | `0`     | X-axis offset from the position anchor of the element to check for coverage. |
-| y               | `number`                                                                                                        | `0`     | Y-axis offset from the position anchor of the element to check for coverage. |
-| scrollBehaviour | `'top' \| 'bottom' \| 'center'`                                                                                 | `'top'` | Where on the element to perform the first scroll.                            |
-| position        | `'top' \| 'topLeft' \| 'topRight' \| 'left' \| 'center' \| 'right' \| 'bottomLeft' \| 'bottom'\| 'bottomRight'` | `'top'` | The anchor of the the element used to determine if the element in covered.   |
+| Name            | Type                                                                                                            | Default | Description                                                                |
+| --------------- | --------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------- |
+| retries         | `number`                                                                                                        | `3`     | Number of times to retry scrolling.                                        |
+| interval        | `number`                                                                                                        | `100`   | Number of milliseconds to wait between retries.                            |
+| x               | `number`                                                                                                        | `0`     | Pixel offset from the left of the element to check for coverage.           |
+| y               | `number`                                                                                                        | `0`     | Pixel offset from the top of the element to check for coverage.            |
+| scrollBehaviour | `'top' \| 'bottom' \| 'center'`                                                                                 | `'top'` | Where on the element to perform the first scroll.                          |
+| position        | `'top' \| 'topLeft' \| 'topRight' \| 'left' \| 'center' \| 'right' \| 'bottomLeft' \| 'bottom'\| 'bottomRight'` | `'top'` | The anchor of the the element used to determine if the element in covered. |
