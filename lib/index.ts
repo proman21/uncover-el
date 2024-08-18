@@ -2,6 +2,9 @@ import { Position } from './coordinates'
 import { ensureElIsNotCovered, PositionOptions } from './scrolling'
 import { isHiddenByAncestors } from './visibility'
 
+/**
+ * Valid options for scroll behaviour
+ */
 export type ScrollBehavior = 'top' | 'bottom' | 'center'
 
 /**
@@ -40,6 +43,7 @@ const DEFAULT_OPTIONS = {
 
 /**
  * Attempt to scroll to `el`, ensuring the element isn't covered by any fixed or sticky elements.
+ *
  * If it is covered, scroll any scrollable ancestors and check again if that uncovered the element.
  * @param el The element to scroll to
  * @param options A configuration object

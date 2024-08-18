@@ -332,6 +332,7 @@ export function getElementCoordinatesByPositionRelativeToXY(
   return positionProps
 }
 
+/** Position anchors for calculating an element's coordinates. */
 export type Position =
   | 'top'
   | 'topLeft'

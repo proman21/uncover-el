@@ -16,6 +16,7 @@ import {
 } from './elements'
 import { stringify } from './utils'
 
+/** Options for how element position is determined. */
 export interface PositionOptions {
   /**
    * The distance in pixels from the element's left to check if the element is covered.
