@@ -1,7 +1,7 @@
 {
   "name": "uncover-el",
   "description": "Smol library to scroll to an element on the page",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Adam Jacobus",
   "license": "MIT",
   "repository": "github:proman21/uncover-el",
