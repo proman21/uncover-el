@@ -3,7 +3,7 @@
 const config = {
   entries: [
     {
-      filePath: './lib/index.ts',
+      filePath: './lib/mod.ts',
       outFile: './dist/index.d.ts',
       noCheck: false,
       output: {

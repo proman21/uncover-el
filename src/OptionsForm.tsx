@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { Controller, useForm } from 'react-hook-form'
 import * as yup from 'yup'
-import type { Options, Position, ScrollBehavior } from '../lib'
+import type { Options, Position, ScrollBehavior } from '../lib/mod'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useEffect } from 'react'
 

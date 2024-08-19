@@ -18,9 +18,9 @@ export default {
             label: 'Uncover-el (${nextRelease.gitTag}) ES Module',
           },
           {
-            path: 'dist/index.umd.cjs',
-            name: 'uncover-el-${nextRelease.gitTag}.umd.cjs',
-            label: 'Uncover-el (${nextRelease.gitTag}) UMD Script',
+            path: 'dist/index.iife.js',
+            name: 'uncover-el-${nextRelease.gitTag}.iife.js',
+            label: 'Uncover-el (${nextRelease.gitTag}) IIFE Script',
           },
         ],
       },

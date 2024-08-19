@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/index.ts'),
+      entry: resolve(__dirname, 'lib/mod.ts'),
+      formats: ['es', 'cjs', 'iife'],
       name: 'uncoverEl',
       fileName: 'index',
     },

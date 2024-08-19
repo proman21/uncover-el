@@ -15,13 +15,14 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.cjs",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.js",
+  "browser": "./dist/index.iife.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
